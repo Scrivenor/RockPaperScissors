@@ -1,5 +1,5 @@
-
-function getRandomIntInclusive(min, max) { // thsi function is overkill but I figure this could be useful in the future.
+// Helper functions
+function getRandomIntInclusive(min, max) { // this function is overkill but I figure this could be useful in the future.
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
@@ -10,7 +10,7 @@ return myString.charAt(0).toUpperCase() + myString.slice(1).toLowerCase()
 
 }
 
-
+// main functions
 function computerPlay () {
     switch ( getRandomIntInclusive( 1, 3) ) {
         case 1:
@@ -85,6 +85,8 @@ function game() {
                 break;
         }
     }
+    
+    // Display winner
     if ( playerScore > compScore ) {
         console.log( `You win! The final score is ${playerScore} (You) to ${compScore} (Computer).`);
     } else if ( compScore > playerScore ) {
@@ -95,6 +97,7 @@ function game() {
 
 }
 
+//run the game
 game();
 
 
