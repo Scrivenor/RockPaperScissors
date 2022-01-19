@@ -1,0 +1,73 @@
+
+
+.playerControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px;
+}
+
+.newGame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 50px; */
+    margin: 50px;
+}
+
+.playerChoiceButton {
+    color: blueviolet;
+}
+
+.gameOver {
+    color: grey;
+}
+
+.title {
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+
+}
+
+.scoreBoard {
+    border-style: solid;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerScoreBox {
+    text-align: center;
+}
+
+.playerScoreText {
+
+}
+
+.Score {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.computerScoreBox {
+    text-align: center;
+}
+
+.computerScoreText {
+
+}
+
+#winnerRound {
+    /* border-style: solid; */
+    /* border-radius: 16px; */
+}
+
+#winnerGame {
+    /* border-style: solid; */
+    /* border-radius: 16px; */
+}
