@@ -1,37 +1,35 @@
-
-
 .playerControls {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin: 50px;
 }
 
 .newGame {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 50px; */
-    margin: 50px;
 }
 
-.playerChoiceButton {
-    color: blueviolet;
-}
-
-.gameOver {
-    color: grey;
+img {
+    height: 200px;
+    width: 200px;
 }
 
 .title {
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     font-weight: bold;
+    font-size: 24px;
+}
 
+.scoringSection {
+    display: flex;
+    justify-content: center;
 }
 
 .scoreBoard {
+    margin: 25px;
     border-style: solid;
     border-radius: 16px;
     display: flex;
@@ -39,35 +37,46 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    width: 736px;
 }
 
-.playerScoreBox {
+.ScoreBox {
     text-align: center;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 15px;
 }
 
-.playerScoreText {
+.scoreText {
+    margin: 15px;
 
 }
 
 .Score {
     font-size: 48px;
     font-weight: bold;
+    margin: 15px;
 }
 
-.computerScoreBox {
-    text-align: center;
+
+#lastWinner {
+    font-size: 18px;
+    font-weight: normal;
 }
 
-.computerScoreText {
-
+#lastWinnerBox {
+    width: 400px;
+    height: 147px;
 }
 
-#winnerRound {
-    /* border-style: solid; */
-    /* border-radius: 16px; */
+#playerScoreBox {
+    margin-right: auto;
 }
 
-#winnerGame {
-    /* border-style: solid; */
-    /* border-radius: 16px; */
+#compScoreBox {
+    margin-left: auto;
+}
+
+#resetButton {
+    font-size: 20px;
 }

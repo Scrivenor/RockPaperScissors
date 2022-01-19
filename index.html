@@ -8,28 +8,30 @@
 </head>
 <body>
 
-  <div class = "title">Choose your weapon! Best of five wins!!</div>
+  <div class = "title">Choose your weapon! Best of five rounds wins!!</div>
   <div class = "playerControls">
-    <button id = "Rock" class = "playerChoiceButton" onclick = "playRound( this.id )" >Rock</button>
-    <button id = "Paper" class = "playerChoiceButton" onclick = "playRound( this.id )" >Paper</button>
-    <button id = "Scissors" class = "playerChoiceButton" onclick = "playRound( this.id )" >Scissors</button>
+    <button id = "Rock" class = "playerChoiceButton" onclick = "playRound( this.id )" ><img src = "images/rock.png"></img></button>
+    <button id = "Paper" class = "playerChoiceButton" onclick = "playRound( this.id )" ><img src = "images/paper.png"></img></button>
+    <button id = "Scissors" class = "playerChoiceButton" onclick = "playRound( this.id )" ><img src = "images/scissors.png"></img></button>
   </div>
   
- 
-
-  <div id = "playerChoice"></div>
+   <div id = "playerChoice"></div>
   <div id = "compChoice"></div>
-  <!-- <div id = "roundsPlayed">0</div> --> 
   <div class = "scoringSection"> 
     <div class = "scoreBoard" >
-      <div class = "playerScoreBox">
-        <div id = "playerScoreText" >Your score</div>
+      
+      <div id = "playerScoreBox" class = "ScoreBox">
+        <div class = "scoreText" >Your Score</div>
         <div id = "playerScore" class = "Score" >0</div>
       </div>
-      <div id = "winnerRound" >Winner of round</div>
-      <div id = "winnerGame" >Winner of game</div>
-      <div class = "computerScoreBox">
-        <div id = "compScoreText" >Computer score</div>
+      
+      <div id = "lastWinnerBox" class = "ScoreBox">
+        <div id = "roundOrFinal" class = "scoreText" ></div>
+        <div id = "lastWinner" class = "Score"></div>        
+      </div>
+             
+      <div id = "compScoreBox" class = "ScoreBox">
+        <div class = "scoreText" >Comp Score</div>
         <div id = "compScore" class = "Score" >0</div>
       </div>
 
@@ -38,7 +40,7 @@
 
 
   <div class = "newGame" >
-    <button id = "Reset" onClick = "window.location.reload()" >New Game</button>
+    <button id = "resetButton" onClick = "window.location.reload()" >New Game</button>
   </div>
 
 
